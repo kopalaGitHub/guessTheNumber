@@ -27,6 +27,9 @@
   color: blue;
   font-size: 4rem;
 }
+.header span {
+  color: red;
+}
 .wrapper > div {
   background: linear-gradient(
     151deg,
