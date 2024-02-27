@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  color: bisque;
+  font-size: 5rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    151deg,
+    rgba(251, 224, 6, 1) 0%,
+    rgba(91, 61, 65, 1) 66%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+.header {
+  position: absolute;
+  top: 5rem;
+  color: blue;
+  font-size: 4rem;
+}
+.wrapper > div {
+  background: linear-gradient(
+    151deg,
+    rgba(255, 242, 130, 1) 0%,
+    rgba(155, 100, 107, 1) 66%,
+    rgba(44, 80, 112, 1) 100%
+  );
+  width: 10rem;
+  height: 10rem;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px 0;
+  cursor: pointer;
+}
+.wrapper > div:active {
+  background: linear-gradient(
+    151deg,
+    rgba(220, 209, 114, 1) 0%,
+    rgba(118, 77, 82, 1) 66%,
+    rgba(29, 52, 73, 1) 100%
+  );
+}
+.wrapper > input {
+  height: 10rem;
+  width: 10rem;
+  font-size: 8rem;
+}
+.wrapper > p {
+  position: absolute;
+  top: 10rem;
+  text-align: center;
+  color: red;
+  width: 10rem;
+  height: 10rem;
+}
+.wrapper > h3 {
+  position: absolute;
+  bottom: 15rem;
+  color: green;
+  font-size: 4rem;
+}
+.wrapper > button {
+  position: absolute;
+  bottom: 10rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 15rem;
+  font-size: 2rem;
+  background: linear-gradient(
+    151deg,
+    rgba(37, 68, 144, 1) 0%,
+    rgba(118, 77, 82, 1) 66%,
+    rgba(69, 124, 172, 1) 100%
+  );
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
