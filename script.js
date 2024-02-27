@@ -3,6 +3,7 @@ function getRandomInt(max) {
 }
 const randomNumber = getRandomInt(100);
 
+let count = 0;
 function check() {
   let inputNumber = document.getElementById("guessNumber").value;
   let text = document.getElementById("text");
@@ -10,13 +11,15 @@ function check() {
     alert("dude are you dum???? it sayes to max is 100  ");
   }
   if (inputNumber == randomNumber) {
-    text.innerHTML = "you guessed corectly";
+    text.innerHTML = "you guessed corectly in the " + count + "th attempt";
     const corectNum = document.getElementById("secretNumber");
     corectNum.innerHTML = randomNumber;
   } else if (inputNumber < randomNumber) {
     text.innerHTML = "your number is low";
+    count += 1;
   } else if (inputNumber > randomNumber) {
     text.innerHTML = "your number is high";
+    count += 1;
   }
 }
 function plus() {
